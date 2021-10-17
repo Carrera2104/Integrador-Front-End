@@ -84,29 +84,35 @@
         </picture>
         <div>
             <p>Bs As - Octubre</p>
-            <p>Buenos Aires es la provincia y localidad más grande del estado de Argentina, en los Estados Unidos. Honolulu es la más sureña de entre las principales ciudades estadounidenses. Aunque el nombre de Honolulu han formado una ciudad-condado consolidada que cubre toda la ciudad (aproximadamente 600 km<span>2</span> de superficie).</p>
+            <p class="texto">Buenos Aires es la provincia y localidad más grande del estado de Argentina, en los Estados Unidos. Honolulu es la más sureña de entre las principales ciudades estadounidenses. Aunque el nombre de Honolulu se refiere al área urbana en la costa sureste de la isla de Oahu, la ciudad y el condado de Honolulu han formado una ciudad-condado consolidada que cubre toda la ciudad (aproximadamente 600 km<sup>2</sup> de superficie).</p>
             <input type="submit" value="Conocé más">
         </div>
     </section>
-    <!-- <div>
-        <p>CONVIÉRTETE EN UN</p>
-        <P>ORADOR</P>
+    <div class="formulario">
+        <p>CONVIÉRTETE EN UN<br><span>ORADOR</span></p>
         <P>Anotate como orador para dar una <span>charla ignite</span>. Cuéntanos de qué quieres hablar!</P>
-        <form action="" method="POST" target="_blank">
+        <form action="" method="POST">
             <div class="row g-3">
                 <div class="col">
-                  <input type="text" class="form-control" placeholder="First name" aria-label="First name">
+                  <input type="text" class="form-control" placeholder="Nombre" aria-label="First name">
                 </div>
                 <div class="col">
-                  <input type="text" class="form-control" placeholder="Last name" aria-label="Last name">
+                  <input type="text" class="form-control" placeholder="Apellido" aria-label="Last name">
                 </div>
+                <div>
+                    <textarea class="comentario" name="Comentario" id="Comentario" placeholder="Sobre que quieres hablar" rows="4"></textarea>
+                </div>
+                <p>Recuerda incluir un título para tu charla</p>
+              </div>
+              <div class="enviar">
+                <input type="submit" value="Enviar">
               </div>
         </form>
-    </div> -->
+    </div>
     <footer>
         <ul>
             <li>
-                <a href="">Preguntas frecuentes</a>
+                <a href="">Preguntas<br>frecuentes</a>
             </li>
             <li>
                 <a href="">Contáctanos</a>
@@ -118,7 +124,7 @@
                 <a href="">Conferencias</a>
             </li>
             <li>
-                <a href="">Términos y condiciones</a>
+                <a href="">Términos y<br>condiciones</a>
             </li>
             <li>
                 <a href="">Privacidad</a>
