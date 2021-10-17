@@ -1,0 +1,232 @@
+html{
+    font-size: 62.5%;
+}
+
+li{
+    list-style: none;
+    display: inline-block;
+}
+
+a:hover{
+    color: white;
+}
+
+body{
+    display: grid;
+    min-height: 100vh;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: auto auto auto auto auto auto;
+}
+
+/*Etiqueta nav*/
+
+nav{
+    grid-column: span 12;
+    display: flex;
+    background-color: #333A40;
+    align-items: center;
+    /* justify-content: space-around; */
+    padding: 1rem 0;
+}
+
+nav div picture img{
+    max-width: 100px;
+}
+
+nav div p{
+    color: white;
+    font-size: 17px;
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+}
+
+nav div{
+    flex-grow: 1;
+}
+
+nav ul{
+    display: flex;
+    margin: 0;
+    padding: 0;
+    flex-grow: 1;
+    justify-content: space-around;
+}
+
+nav ul li a{
+    font-size: 1.4rem;
+    text-decoration: none;
+    color: grey;
+}
+
+nav ul li:last-child a{
+    color: #2CA244;
+}
+
+/*Etiqueta seccion de Calle*/
+
+#calle{
+    grid-column: span 12;
+    grid-row: 2;
+    background-image: url(../Multimedia/ba1.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    height: 100vh;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+}
+
+#calle div.caja{
+    grid-column: 2;
+    grid-row: 2;
+    padding: 1rem;
+    margin-right: 8rem;
+}
+
+#calle div p{
+    padding: 0;
+    margin: 0;
+    color: white;
+    font-size: 1.8rem;
+    text-align: right;
+    font-weight: bold;
+    font-weight: 450;
+}
+
+#calle div p:first-child{
+    font-size: 3rem;
+    font-weight: bold;
+    font-weight: 600;
+}
+
+.botones{
+    text-align: end;
+}
+
+.botones input:first-child{
+    background-color: rgba(33, 30, 212, 0);
+    display: inline-block;
+    margin: 0.5rem;
+    padding: 0.5rem 1.5rem;
+    font-size: 2rem;
+    border-radius: 5px;
+    border: white solid 1px;
+    color: white;
+}
+
+.botones input:last-child{
+    font-size: 2rem;
+    border-radius: 5px;
+    background-color: #29A744;
+    color: white;
+    margin: 0.5rem;
+    padding: 0.5rem 1.5rem;
+    border: #29A744;
+}
+
+/*Estilos de oradores*/
+
+.título{
+    padding: 0.8rem;
+    text-align: center;
+    font-size: 1rem;
+}
+
+.título span{
+    font-size: 2.2rem;
+    font-weight: bold;
+    font-weight: 500;
+}
+
+.oradores{
+    grid-row: 3;
+    grid-column: 3 / 11;
+    margin-bottom: 2rem;
+}
+
+.card-group{
+    gap: 2rem;
+}
+
+.card-body{
+    padding: 1.5rem;
+}
+
+.card-body h5{
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.card-text{
+    font-size: 1.2rem;
+}
+
+.logo_java{
+    color: black;
+    display: inline-block;
+    background-color: #FEC107;
+    font-weight: bold;
+    font-size: 1.2rem;
+    padding: 1px 5px;
+    border-radius: 5px;
+    margin: 0 1px;
+    margin-top: 1.5rem;
+}
+
+.logo_react{
+    color: white;
+    display: inline-block;
+    background-color: #18A3BA;
+    font-weight: bold;
+    font-size: 1.2rem;
+    padding: 1px 5px;
+    border-radius: 5px;
+    margin: 0 1px;
+    margin-top: 1.5rem;
+}
+
+.logo_negocios{
+    color: white;
+    display: inline-block;
+    background-color: #6C757E;
+    font-weight: bold;
+    font-size: 1.2rem;
+    padding: 1px 5px;
+    border-radius: 5px;
+    margin: 0 1px;
+    margin-top: 1.5rem;
+}
+
+.logo_startups{
+    color: white;
+    display: inline-block;
+    background-color: #DB3646;
+    font-weight: bold;
+    font-size: 1.2rem;
+    padding: 1px 5px;
+    border-radius: 5px;
+    margin: 0 1px;
+    margin-top: 1.5rem;
+}
+
+/*Estilos de playa*/
+
+.playa picture{
+    grid-row: 4;
+    grid-column: 1 / 6;
+}
+
+.playa div{
+    grid-row: 4;
+    grid-column: 7 / 13;
+}
+
+section picture img{
+   width: 50%;
+}
+
+footer{
+    grid-row: 6;
+    grid-column: span 12;
+}
