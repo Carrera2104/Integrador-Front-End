@@ -15,7 +15,7 @@ body{
     display: grid;
     min-height: 100vh;
     grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: auto auto auto auto auto auto;
+    grid-template-rows: auto auto auto auto auto auto auto;
 }
 
 /*Etiqueta nav*/
@@ -322,10 +322,151 @@ nav ul li:last-child a{
     padding-bottom: 0.8rem;
 }
 
+/*Tickets*/
+
+.ticket{
+    grid-row: 6;
+    grid-column: 4 / 10;
+    margin-top: 2rem;
+}
+
+.descuento{
+    display: flex;
+    gap: 0.3rem;
+    justify-content: space-between;
+}
+
+.descuento div{
+    height: 20rem;
+    width: 22rem;
+    border: 2px solid blue;
+}
+
+.descuento div:nth-child(3){
+    border: 2px solid #FFC107;
+}
+
+.descuento div h2{
+    font-size: 2rem;
+    font-weight: 650;
+    text-align: center;
+    padding: 1.8rem 0;
+}
+
+.descuento div h3{
+    font-size: 1.8rem;
+    text-align: center;
+}
+
+.descuento div h4{
+    font-size: 1.8rem;
+    text-align: center;
+    font-weight: 650;
+    padding: 1.8rem 0;
+}
+
+.descuento div h5{
+    font-size: 1.8rem;
+    text-align: center;
+    color: gray;
+    font-size: 1.5rem;
+}
+
+.ticket p{
+    text-align: center;
+    font-size: 1.6rem;
+}
+
+.ticket h2{
+    text-align: center;
+    font-size: 3rem;
+    font-weight: 600;
+    margin-bottom: 2rem;
+}
+
+#persona{
+    display: flex;
+    justify-content: space-between;
+}
+
+#nombre{
+    width: 49%;
+}
+
+#apellido{
+    width: 49%;
+}
+
+.ticket div input{
+    font-size: 1.8rem;
+}
+
+#correo{
+    margin: 1rem 0;
+}
+
+#cantidad_y_categoria{
+    display: flex;
+    justify-content: space-between;
+}
+
+#cantidad_y_categoria div{
+    width: 49%;
+}
+
+#cantidad_y_categoria div p{
+    text-align: left;
+    margin-top: 0.8rem;
+    margin-bottom: 0.6rem;
+}
+
+#cantidad_y_categoria div input{
+    width: 100%;
+}
+
+#cantidad_y_categoria div select{
+    width: 100%;
+    font-size: 1.8rem;
+}
+
+.total{
+    background-color: #CCE5FF;
+    margin: 3rem 0;
+    padding: 1rem 2rem;
+    border-radius: 4px;
+}
+
+.total p{
+    font-size: 1.8rem;
+    color: #004085;
+    text-align: left;
+    margin: 0;
+    font-weight: 500;
+}
+
+#borrar_y_resumen{
+    display: flex;
+    justify-content: space-between;
+}
+
+#borrar_y_resumen div{
+    width: 49%;
+}
+
+#borrar_y_resumen div input{
+    width: 100%;
+    background-color: #96C93E;
+    border: #96C93E;
+    border-radius: 3px;
+    color: white;
+    font-size: 1.7rem;
+    padding: 1rem;
+}
+
 /*Estilos para footer*/
 
 footer{
-    grid-row: 6;
+    grid-row: 7;
     grid-column: span 12;
     margin-top: 2rem;
     background-color: #1D4255;

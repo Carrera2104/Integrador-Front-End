@@ -109,6 +109,66 @@
               </div>
         </form>
     </div>
+    <form class="ticket" action="" method="POST">
+        <div class="descuento">
+            <div id="Estudiante">
+                <h2>Estudiante</h2>
+                <h3>Tienen un descuento</h3>
+                <h4>80%</h4>
+                <h5>* presentar documentación</h5>
+            </div>
+            <div id="Trainee">
+                <h2>Trainee</h2>
+                <h3>Tienen un descuento</h3>
+                <h4>50%</h4>
+                <h5>* presentar documentación</h5>
+            </div>
+            <div id="Junior">
+                <h2>Junior</h2>
+                <h3>Tienen un descuento</h3>
+                <h4>15%</h4>
+                <h5>* presentar documentación</h5>
+            </div>
+        </div>
+        <p>VENTA</p>
+        <h2>VALOR DE TICKET $200</h2>
+        <div id="persona">
+            <div id="nombre">
+                <input type="text" class="form-control" placeholder="Nombre" aria-label="First name">
+            </div>
+            <div id="apellido">
+                <input type="text" class="form-control" placeholder="Apellido" aria-label="Last name">
+            </div>
+        </div>
+        <div id="correo">
+            <input type="text" class="form-control" placeholder="Correo" aria-label="Correo">
+        </div>
+        <div id="cantidad_y_categoria">
+            <div>
+                <p>Cantidad</p>
+                <input id="cantidad" type="number" min="0" class="form-control" placeholder="Cantidad" aria-label="Cantidad">
+            </div>
+            <div>
+                <p>Categoria</p>
+                <select id="categoria" class="form-select" aria-label="Default select example">
+                    <option value="1" selected>Estudiante</option>
+                    <option value="2">Trainee</option>
+                    <option value="3">Junior</option>
+                </select>
+            </div>
+        </div>
+        <div class="total">
+            <p id="pago">Total a Pagar: $</p>
+        </div>
+        <div id="borrar_y_resumen">
+            <div>
+                <input id="reset" type="reset" value="Borrar">
+            </div>
+            <div>
+                <input id="resumen" type="button" value="Resumen">
+            </div>
+        </div>
+    </form>
     <footer>
         <ul>
             <li>
@@ -134,5 +194,6 @@
             </li>
         </ul>
     </footer>
+    <script src="index.js"></script>
 </body>
 </html>
